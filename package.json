@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "latest",
+    "raw-loader": "^4.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-icons": "^3.8.0",
