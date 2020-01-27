@@ -14,7 +14,7 @@ export const DateSpan = styled.span`
 
 // Todo : Add font to title and slug
 export const Title = styled.a`
-  color: #5b5656;
+  color: ${({ theme }) => theme.text};
   font-weight: bold;
   margin-top: 10px;
 
@@ -25,7 +25,7 @@ export const Title = styled.a`
 `;
 
 export const PostDetailTitle = styled.h3`
-  color: #5b5656;
+  color: ${({ theme }) => theme.text};
   font-weight: 900;
   padding-top: 1rem !important;
   font-family: Montserrat, sans-serif;

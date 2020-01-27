@@ -19,29 +19,29 @@ const Info = () => {
         </span>
 
         <span>
-          <FaTelegram size={30}  />
+          <FaTelegram size={30} />
         </span>
 
         <span>
-          <FaLinkedin size={30}  />
+          <FaLinkedin size={30} />
         </span>
       </div>
 
       <h6 className="footer text-center mt-5">
-      &copy; All rights reserved {new Date().getFullYear()}
+        &copy; All rights reserved {new Date().getFullYear()}
       </h6>
 
       <style jsx>{`
-        .icons{
-          margin-top:40px;
+        .icons {
+          margin-top: 40px;
         }
         .icons span {
           margin-left: 10px;
         }
 
-        .footer{
-          color:gray;
-          font-size: 14px
+        .footer {
+          color: gray;
+          font-size: 14px;
         }
       `}</style>
     </div>

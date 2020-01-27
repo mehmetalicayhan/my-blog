@@ -2,6 +2,7 @@ import App from "next/app";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
+import Providers from "../components/theming/Providers";
 
 const theme = {
   colors: {
@@ -13,9 +14,9 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <ThemeProvider theme={theme}>
+      <Providers>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </Providers>
     );
   }
 }
