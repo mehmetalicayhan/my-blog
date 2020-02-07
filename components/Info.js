@@ -1,12 +1,11 @@
-import { FaGithub, FaTelegram, FaLinkedin } from "react-icons/fa";
-import {ResponsiveImg} from './styledComponents/styles';
+import { FaGithub, FaTelegram, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+import { ResponsiveImg, SocialLink } from "./styledComponents/styles";
 const Info = () => {
   return (
     <div>
-      <ResponsiveImg
-        src="profile.jpeg"
-      />
-      
+      <ResponsiveImg src="profile.jpeg" />
+
       <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
       <p className="text-center" style={{ color: "#aeadad" }}>
         Magna duis ex elit ea voluptate Lorem in consequat est minim laboris.
@@ -16,15 +15,26 @@ const Info = () => {
 
       <div className="icons d-flex justify-content-center">
         <span>
-          <FaGithub size={30} />
+          <SocialLink href="https://github.com/zeit/next.js">
+            <FaGithub size={30} />
+          </SocialLink>
         </span>
 
         <span>
-          <FaTelegram size={30} />
+          <SocialLink href="https://github.com/zeit/next.js">
+            <FaTelegram size={30} />
+          </SocialLink>
         </span>
 
         <span>
-          <FaLinkedin size={30} />
+          <SocialLink href="https://github.com/zeit/next.js">
+            <FaLinkedin size={30} />
+          </SocialLink>
+        </span>
+        <span>
+          <SocialLink href="https://github.com/zeit/next.js">
+            <FaEnvelope size={30} />
+          </SocialLink>
         </span>
       </div>
 

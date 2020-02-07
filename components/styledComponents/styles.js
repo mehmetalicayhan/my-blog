@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Sample = styled.span`
-  color: #fddb3a;
   margin-left: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -36,8 +35,8 @@ export const PostDetailTitle = styled.h3`
   text-align: center;
 `;
 
-export const Slug = styled.p`
-  color: #5b5656;
+export const Summary = styled.p`
+  color: ${({ theme }) => theme.summary};
   font-weight: bold;
   margin-top: 10px;
 `;
@@ -49,11 +48,17 @@ export const ReadLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #3e206d;
+    color: ${({ theme }) => theme.hover};
     text-decoration: underline;
   }
 `;
 
+export const SocialLink = styled.a`
+  color:inherit;
+  &:hover {
+    color: ${({ theme }) => theme.hover};
+  }
+`;
 export const ReadTime = styled.span`
   color: ${({ theme }) => theme.date};
   font-weight: bold;

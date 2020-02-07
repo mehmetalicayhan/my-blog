@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Span = styled.span`
   color: ${({ theme }) => theme.text};
-  &:hover{
+  &:hover {
     color: ${({ theme }) => theme.hover};
   }
 `;
@@ -26,11 +26,9 @@ const Toggle = ({ theme, toggleTheme }) => {
       </button>
       <button className="btn rounded">
         <Link href="/">
-          <a>
-            <Span>
-              <FaHome size={20} />
-            </Span>
-          </a>
+          <Span>
+            <FaHome size={20} />
+          </Span>
         </Link>
       </button>
     </div>

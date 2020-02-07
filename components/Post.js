@@ -5,40 +5,35 @@ import {
   Sample,
   ReadLink,
   ReadTime,
-  Slug,
-  Title
+  Title,
+  Summary
 } from "./styledComponents/styles";
-// function findTextWordCount(text) {
-//   let count = 0;
-//   for (let i = 0; i < text.length; i++) {
-//     if (text[i] === " ") {
-//       count++;
-//     }
-//   }
-
-//   const readTime = Math.ceil(count / 265);
-//   return readTime;
-// }
 
 const Post = ({ data }) => {
   return (
     <div>
       <div className="p-3 ml-3">
         <DateSpan>{data.date}</DateSpan>
-        <Sample>{data.category}</Sample>
+        <Sample
+          style={{
+            color: `${data.category.color}`
+          }}
+        >
+          {data.category.name}
+        </Sample>
         <h2>
           <Link href={data.slug}>
             <Title href="#">{data.title}</Title>
           </Link>
         </h2>
-        <Slug>{data.slug}</Slug>
+        <Summary>{data.summary}</Summary>
         <div>
           <Link href={data.slug}>
             <ReadLink href="#">Read</ReadLink>
           </Link>
           <ReadTime>
             <span className="small">
-              10 min
+              {data.readTime} min
               <FaBook className="ml-1" />
             </span>
           </ReadTime>
