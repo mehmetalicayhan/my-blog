@@ -8,7 +8,7 @@ export const Sample = styled.span`
 `;
 
 export const DateSpan = styled.span`
-  color: #5b5656;
+  color: ${({ theme }) => theme.date};
   font-family: "Montserrat", sans-serif;
 `;
 
@@ -16,10 +16,11 @@ export const DateSpan = styled.span`
 export const Title = styled.a`
   color: ${({ theme }) => theme.text};
   font-weight: bold;
+  font-size:1.5rem;
   margin-top: 10px;
 
   &:hover {
-    color: #3e206d;
+    color:${({ theme }) => theme.hover};
     text-decoration: underline;
   }
 `;
@@ -33,9 +34,6 @@ export const PostDetailTitle = styled.h3`
   font-size: 2rem;
   line-height: 1.1;
   text-align: center;
-  &:hover {
-    color: #3e206d;
-  }
 `;
 
 export const Slug = styled.p`
@@ -57,8 +55,16 @@ export const ReadLink = styled.a`
 `;
 
 export const ReadTime = styled.span`
-  color: #5b5656;
+  color: ${({ theme }) => theme.date};
   font-weight: bold;
   text-decoration: none;
   float: right;
+`;
+
+export const ResponsiveImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 50%;
 `;

@@ -5,7 +5,8 @@ import {
   Sample,
   ReadLink,
   ReadTime,
-  Slug
+  Slug,
+  Title
 } from "./styledComponents/styles";
 // function findTextWordCount(text) {
 //   let count = 0;
@@ -27,10 +28,9 @@ const Post = ({ data }) => {
         <Sample>{data.category}</Sample>
         <h2>
           <Link href={data.slug}>
-            <a className="text-dark">{data.title}</a>
+            <Title href="#">{data.title}</Title>
           </Link>
         </h2>
-        {/* Todo : add read time for every blog post */}
         <Slug>{data.slug}</Slug>
         <div>
           <Link href={data.slug}>
