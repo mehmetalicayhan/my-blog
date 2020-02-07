@@ -15,11 +15,11 @@ export const DateSpan = styled.span`
 export const Title = styled.a`
   color: ${({ theme }) => theme.text};
   font-weight: bold;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 
   &:hover {
-    color:${({ theme }) => theme.hover};
+    color: ${({ theme }) => theme.hover};
     text-decoration: underline;
   }
 `;
@@ -54,7 +54,7 @@ export const ReadLink = styled.a`
 `;
 
 export const SocialLink = styled.a`
-  color:inherit;
+  color: inherit;
   &:hover {
     color: ${({ theme }) => theme.hover};
   }
@@ -72,4 +72,13 @@ export const ResponsiveImg = styled.img`
   margin-right: auto;
   width: 60%;
   border-radius: 50%;
+`;
+
+export const Bio = styled.div`
+  color: ${({ theme }) => theme.text};
+  font-family: JetBrains Mono;
+  text-rendering: optimizeLegibility;
+  font-size: 1.3rem;
+  text-align:center;
+  line-height: 1.1;
 `;

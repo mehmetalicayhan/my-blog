@@ -1,17 +1,32 @@
 import { FaGithub, FaTelegram, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
-import { ResponsiveImg, SocialLink } from "./styledComponents/styles";
+import Typist from "react-typist";
+import { ResponsiveImg, SocialLink, Bio } from "./styledComponents/styles";
 const Info = () => {
   return (
     <div>
       <ResponsiveImg src="profile.jpeg" />
 
-      <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
-      <p className="text-center" style={{ color: "#aeadad" }}>
-        Magna duis ex elit ea voluptate Lorem in consequat est minim laboris.
-        Commodo aliqua aute cupidatat cupidatat eiusmod laboris do velit
-        adipisicing eiusmod commodo. Est veniam est laboris dolore voluptate sit
-      </p>
+      <Bio>
+        <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
+        <div className="mt-3"> 
+        <Typist startDelay={2000} cursor={{ hideWhenDone: true, element: "_ " }}>
+          Hello,
+          <Typist.Backspace count={6} delay={500} />
+          Welcome to my blog,
+          <Typist.Backspace count={22} delay={500} />
+          I am a 3rd year computer engineering student at Sakarya University
+          <br />
+          <Typist.Delay ms={500} />
+          I like to share with others when learning
+          <br />
+          <Typist.Delay ms={500} />
+          I read some books,
+          <br />
+          <Typist.Delay ms={200} />
+          And...
+        </Typist>
+        </div>
+      </Bio>
 
       <div className="icons d-flex justify-content-center">
         <span>
