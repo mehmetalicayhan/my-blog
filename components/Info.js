@@ -5,7 +5,7 @@ const Info = () => {
   let aboutLine = "In laborum excepteur reprehenderit minim cillum nostrud.";
   return (
     <div>
-      <ResponsiveImg src="profile.jpeg" />
+      <ResponsiveImg src="profile.jpg" />
 
       <Bio>
         <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
