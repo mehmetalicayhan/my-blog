@@ -6,7 +6,7 @@ import Post from "../components/Post";
 const Home = ({ posts }) => (
   <div className="container">
     <div className="row">
-      <div className="col-3 mr-3">
+      <div className="col-md-3">
         <Info />
       </div>
       <div className="col border-left">
