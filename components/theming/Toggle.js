@@ -24,13 +24,15 @@ const Toggle = ({ theme, toggleTheme }) => {
           </span>
         )}
       </button>
-      <button className="btn rounded">
+      {/* <button className="btn rounded">
         <Link href="/">
-          <Span>
-            <FaHome size={20} />
-          </Span>
+          <a>
+            <Span>
+              <FaHome size={20} />
+            </Span>
+          </a>
         </Link>
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -1,17 +1,13 @@
 module.exports = {
   devIndicators: {
-    autoPrerender: false,
+    autoPrerender: false
   },
-}
-module.exports = {
-  webpack: (config) => {
-    config.module.rules.push(
-      {
-        test: /\.md$/,
-        use: 'raw-loader'
-      }
-    )
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "raw-loader"
+    });
 
-    return config
-  },
-}
+    return config;
+  }
+};

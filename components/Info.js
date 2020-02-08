@@ -2,10 +2,10 @@ import { FaGithub, FaTelegram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Typist from "react-typist";
 import { ResponsiveImg, SocialLink, Bio } from "./styledComponents/styles";
 const Info = () => {
-  let aboutLine = "In laborum excepteur reprehenderit minim cillum nostrud.";
+  let aboutLine = "Bloguma Hoşgeldiniz...";
   return (
     <div>
-      <ResponsiveImg src="profile.jpg" />
+      <ResponsiveImg src="profile.jpeg" />
 
       <Bio>
         <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
@@ -14,47 +14,39 @@ const Info = () => {
             startDelay={2000}
             cursor={{ hideWhenDone: true, element: "_ " }}
           >
-            Hello,
-            <Typist.Backspace count={6} delay={500} />
+            Merhaba,
+            <Typist.Backspace count={8} delay={500} />
             {aboutLine}
             <Typist.Backspace count={aboutLine.length + 1} delay={500} />
-            Dolor proident exercitation consectetur tempor adipisicing Lorem
-            occaecat velit nisi culpa esse.
+            Sakarya Üniversitesi Bilgisayar Mühendisliği 3.Sınıf öğrencisiyim.
             <br />
             <Typist.Delay ms={500} />
-            Magna ut quis incididunt consectetur reprehenderit excepteur nulla
-            cupidatat nulla duis excepteur consectetur.
+            Öğrenmek ve öğrendikçe paylaşmak için burada olacağım :{")"}
             <br />
-            <Typist.Delay ms={500} />
-            Voluptate exercitation veniam sint dolore anim anim est aliquip nisi
-            commodo.
-            <br />
-            <Typist.Delay ms={200} />
-            And...
           </Typist>
         </div>
       </Bio>
 
       <div className="icons d-flex justify-content-center">
         <span>
-          <SocialLink href="https://github.com/zeit/next.js">
+          <SocialLink href="https://github.com/mehmetalicayhan">
             <FaGithub size={30} />
           </SocialLink>
         </span>
 
         <span>
-          <SocialLink href="https://github.com/zeit/next.js">
+          <SocialLink href="https://t.me/mehmetalicyhn">
             <FaTelegram size={30} />
           </SocialLink>
         </span>
 
         <span>
-          <SocialLink href="https://github.com/zeit/next.js">
+          <SocialLink href="https://linkedin.com/in/mehmet-ali-çayhan-673545169">
             <FaLinkedin size={30} />
           </SocialLink>
         </span>
         <span>
-          <SocialLink href="https://github.com/zeit/next.js">
+          <SocialLink href="mailto:mehmetalicyhn@gmail.com">
             <FaEnvelope size={30} />
           </SocialLink>
         </span>
