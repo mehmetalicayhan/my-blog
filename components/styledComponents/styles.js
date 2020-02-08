@@ -74,11 +74,15 @@ export const ResponsiveImg = styled.img`
   border-radius: 50%;
 `;
 
+export const Border = styled.div`
+  border: 1px solid ${({ theme }) => theme.hover};
+  border-radius: 4px;
+`;
 export const Bio = styled.div`
   color: ${({ theme }) => theme.text};
   font-family: JetBrains Mono;
   text-rendering: optimizeLegibility;
-  font-size: 1.3rem;
-  text-align:center;
+  font-size: 1.2rem;
+  text-align: center;
   line-height: 1.1;
 `;

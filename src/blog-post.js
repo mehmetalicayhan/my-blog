@@ -15,12 +15,12 @@ function readingTime(post) {
 // Todo : Parse markdown file and find first 10 lines return summary
 
 const categories = [
-  { name: "C Programlama Dili", color: "red" },
-  { name: "Linux", color: "green" },
+  { name: "C Programlama Dili", color: "#ff5733" },
+  { name: "Linux", color: "#008080" },
   { name: "HTML", color: "#fddb3a" },
-  { name: "CSS", color: "gray" },
-  { name: "C++", color: "orange" },
-  { name: "Python", color: "purple" }
+  { name: "CSS", color: "#ff00ff" },
+  { name: "C++", color: "#808000" },
+  { name: "Python", color: "green" }
 ];
 
 export const getPosts = () => {
@@ -43,7 +43,7 @@ export const getPosts = () => {
       details: require("./posts/deneme.md").default,
       readTime: readingTime(require("./posts/deneme.md").default),
       date: "7 Şubat 2020",
-      category: categories[2]
+      category: categories[5]
     }
   ];
 };
