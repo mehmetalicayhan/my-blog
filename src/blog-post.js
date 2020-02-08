@@ -43,6 +43,15 @@ export const getPosts = () => {
       readTime: readingTime(require("./posts/deneme.md").default),
       date: "8 Şubat 2020",
       category: categories[1]
+    },
+    {
+      title: "github...",
+      slug: "github",
+      summary: "git command",
+      details: require("./posts/git.md").default,
+      readTime: readingTime(require("./posts/git.md").default),
+      date: "8 Şubat 2020",
+      category: categories[1]
     }
   ];
 };
