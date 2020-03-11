@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function Seo() {
   const site = {
-    title: 'Mehmet Ali Çayhan ',
+    title: 'Mehmet Ali Çayhan - Personal Blog Site',
     description: 'Mehmet Ali Çayhan personal Blog site .3rd year Computer engineering student at Sakarya University',
     url: 'https://mehmetalicayhan.com',
   }
