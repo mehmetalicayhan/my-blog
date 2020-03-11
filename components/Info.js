@@ -2,7 +2,6 @@ import { FaGithub, FaTelegram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Typist from "react-typist";
 import { ResponsiveImg, SocialLink, Bio } from "./styledComponents/styles";
 const Info = () => {
-  let aboutLine = "Bloguma Hoşgeldiniz...";
   return (
     <div>
       <ResponsiveImg src="profile.jpeg" />
@@ -10,20 +9,9 @@ const Info = () => {
       <Bio>
         <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
         <div className="mt-3">
-          <Typist
-            startDelay={2000}
-            cursor={{ hideWhenDone: true, element: "_ " }}
-          >
-            Merhaba,
-            <Typist.Backspace count={8} delay={500} />
-            {aboutLine}
-            <Typist.Backspace count={aboutLine.length + 1} delay={500} />
-            Sakarya Üniversitesi Bilgisayar Mühendisliği 3.Sınıf öğrencisiyim.
-            <br />
-            <Typist.Delay ms={500} />
-            Öğrenmek ve öğrendikçe paylaşmak için burada olacağım :{")"}
-            <br />
-          </Typist>
+          Merhaba, Sakarya Üniversitesi Bilgisayar Mühendisliği 3.Sınıf
+          öğrencisiyim. Öğrenmek ve öğrendikçe paylaşmak için burada olacağım :
+          {")"}
         </div>
       </Bio>
 
@@ -52,8 +40,11 @@ const Info = () => {
         </span>
       </div>
 
-      <h6 className="footer text-center mt-5">
-        &copy; All rights reserved {new Date().getFullYear()}
+      <h6 className="small text-center mt-5">
+        <SocialLink href="https://github.com/mehmetalicayhan/my-blog">
+          blog-github
+        </SocialLink>{" "}
+        | {new Date().getFullYear()}
       </h6>
 
       <style jsx>{`
@@ -62,11 +53,6 @@ const Info = () => {
         }
         .icons span {
           margin-left: 10px;
-        }
-
-        .footer {
-          color: gray;
-          font-size: 14px;
         }
       `}</style>
     </div>

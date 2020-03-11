@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { PostDetailTitle, DateSpan } from "./styledComponents/styles";
+import { PostDetailTitle, DateSpan, ReadTime } from "./styledComponents/styles";
+import { FaBook } from "react-icons/fa";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -12,9 +13,15 @@ const Container = styled.div`
 const PostDetail = ({ post }) => {
   return (
     <Container>
-      <DateSpan>{post.date}</DateSpan>
-      <PostDetailTitle>{post.title}</PostDetailTitle>
       <div className="p-3">
+        <DateSpan>{post.date}</DateSpan>
+        <ReadTime>
+          <span className="small">
+            {post.readTime} min
+            <FaBook className="ml-1" />
+          </span>
+        </ReadTime>
+        <PostDetailTitle>{post.title}</PostDetailTitle>
         <ReactMarkdown source={post.details} />
       </div>
     </Container>

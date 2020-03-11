@@ -24,7 +24,7 @@ const Toggle = ({ theme, toggleTheme }) => {
           </span>
         )}
       </button>
-      {/* <button className="btn rounded">
+      <button className="btn rounded">
         <Link href="/">
           <a>
             <Span>
@@ -32,7 +32,7 @@ const Toggle = ({ theme, toggleTheme }) => {
             </Span>
           </a>
         </Link>
-      </button> */}
+      </button>
     </div>
   );
 };

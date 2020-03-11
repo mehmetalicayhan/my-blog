@@ -1,25 +1,28 @@
 import styled from "styled-components";
 
 export const Sample = styled.span`
-  margin-left: 15px;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-style: italic;
+  border: 1px solid ${({ theme }) => theme.text};
+  box-shadow: 2px 2px;
+  border-radius: 4px;
+  padding: 3px;
 `;
 
 export const DateSpan = styled.span`
   color: ${({ theme }) => theme.date};
   font-family: "Montserrat", sans-serif;
+  margin-top: 3px;
 `;
 
 // Todo : Add font to title and slug
 export const Title = styled.a`
   color: ${({ theme }) => theme.text};
   font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 10px;
-
+  font-size: 0.85em;
   &:hover {
     color: ${({ theme }) => theme.hover};
+    margin-left: 3px;
     text-decoration: underline;
   }
 `;
@@ -28,7 +31,7 @@ export const PostDetailTitle = styled.h3`
   color: ${({ theme }) => theme.text};
   font-weight: 900;
   padding-top: 1rem !important;
-  font-family: Montserrat, sans-serif;
+  margin-bottom: 15px;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
   line-height: 1.1;
@@ -37,7 +40,6 @@ export const PostDetailTitle = styled.h3`
 
 export const Summary = styled.p`
   color: ${({ theme }) => theme.summary};
-  font-weight: bold;
   margin-top: 10px;
 `;
 
@@ -53,11 +55,15 @@ export const ReadLink = styled.a`
   }
 `;
 
-export const SocialLink = styled.a`
+export const SocialLink = styled.a.attrs({ target: "blank" })`
   color: inherit;
   &:hover {
     color: ${({ theme }) => theme.hover};
   }
+`;
+
+export const HorizontalLine = styled.hr`
+  background-color: #ececec;
 `;
 export const ReadTime = styled.span`
   color: ${({ theme }) => theme.date};
@@ -80,9 +86,9 @@ export const Border = styled.div`
 `;
 export const Bio = styled.div`
   color: ${({ theme }) => theme.text};
-  font-family: JetBrains Mono;
   text-rendering: optimizeLegibility;
-  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.5;
 `;
