@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { PostDetailTitle, DateSpan, ReadTime } from "./styledComponents/styles";
 import { FaBook } from "react-icons/fa";
 import styled from "styled-components";
+import CodeBlock from "./theming/syntaxHighliter";
 
 const Container = styled.div`
   max-width: 650px;
@@ -22,7 +23,11 @@ const PostDetail = ({ post }) => {
           </span>
         </ReadTime>
         <PostDetailTitle>{post.title}</PostDetailTitle>
-        <ReactMarkdown source={post.details} />
+        <ReactMarkdown
+          escapeHtml={true}
+          source={post.details}
+          renderers={{ code: CodeBlock }}
+        />
       </div>
     </Container>
   );
