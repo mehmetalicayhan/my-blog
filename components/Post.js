@@ -38,7 +38,7 @@ function Icon({ name, space }) {
 const Post = ({ data }) => {
   return (
     <div>
-      <div className="p-3 ml-3">
+      <div className="p-3 ml-3 mb-2">
         <div>
           <DateSpan className="float-right">{data.date}</DateSpan>
           <h2>
@@ -74,7 +74,7 @@ const Post = ({ data }) => {
           </Link>
         </div> */}
       </div>
-      <HorizontalLine />
+      {/* <HorizontalLine /> */}
     </div>
   );
 };

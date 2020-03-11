@@ -19,7 +19,7 @@ export const DateSpan = styled.span`
 export const Title = styled.a`
   color: ${({ theme }) => theme.text};
   font-weight: bold;
-  font-size: 0.85em;
+  font-size: 0.75em;
   &:hover {
     color: ${({ theme }) => theme.hover};
     margin-left: 3px;
