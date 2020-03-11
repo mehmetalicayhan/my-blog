@@ -11,7 +11,7 @@ var _default = {
     "padding": "1em",
     "background": "#002b36",
     "color": "#82AAFF",
-    "border-radius": "5px",
+    "borderRadius": "5px",
 
   },
   "hljs-comment": {

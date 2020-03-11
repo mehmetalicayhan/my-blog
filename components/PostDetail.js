@@ -23,11 +23,13 @@ const PostDetail = ({ post }) => {
           </span>
         </ReadTime>
         <PostDetailTitle>{post.title}</PostDetailTitle>
-        <ReactMarkdown
-          escapeHtml={true}
-          source={post.details}
-          renderers={{ code: CodeBlock }}
-        />
+        <div style={{ maxWidth: "650px" }}>
+          <ReactMarkdown
+            escapeHtml={false}
+            source={post.details}
+            renderers={{ code: CodeBlock }}
+          />
+        </div>
       </div>
     </Container>
   );

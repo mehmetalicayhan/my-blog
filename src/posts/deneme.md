@@ -18,3 +18,5 @@ Dolor nisi tempor ea nisi nulla nulla cupidatat proident. Aute veniam tempor ad 
 Qui labore et duis ullamco sit nostrud amet ex quis. Adipisicing excepteur quis excepteur aute ullamco ad aute fugiat dolor nulla nulla dolore. Nulla id consequat laborum tempor ipsum amet. Ex excepteur mollit dolor minim commodo exercitation reprehenderit fugiat labore tempor. Ut duis deserunt quis deserunt ipsum labore pariatur eiusmod proident mollit culpa qui laboris. Consequat aliquip velit aliquip qui aute aliqua est amet anim velit eiusmod nisi sit.
 
 Voluptate occaecat ipsum tempor ut sunt labore tempor sunt do excepteur excepteur duis. Id incididunt tempor sunt esse nisi dolor nulla. Cupidatat aliqua cillum ut voluptate sit elit officia occaecat culpa. Sit voluptate et ipsum culpa. Reprehenderit sit veniam officia sit anim in amet ex sint ad velit quis. Aliqua do anim officia ipsum occaecat in aliquip nostrud.
+
+<img alt="image" style="max-width:650px; width:100%; height:auto;" src="./StackAnimationsPop.gif"></img>

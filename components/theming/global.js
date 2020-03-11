@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Oswald|Ubuntu&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+  
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
@@ -34,14 +35,20 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
+
   code {
     font-family: 'JetBrains Mono';
   }
 
- pre:hover{
+  img[alt="image"]{
+    border:1px solid ${({ theme }) => theme.hover};
+    max-width:650px;
+    width:100%;
+    height:auto;
+  }
+
+  pre:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
   }
   `;
 
