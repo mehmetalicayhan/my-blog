@@ -10,7 +10,7 @@ const Home = ({ posts }) => (
         <Info />
       </div>
       <div
-        className="col-md-1 border-right p-0"
+        className="d-sm-none d-md-block border-right p-0"
         style={{ maxWidth: "5.3333%" }}
       ></div>
       <div className="col ">
@@ -34,5 +34,5 @@ Home.getInitialProps = async ({ req }) => {
   const json = await res.json();
   return { posts: json.posts };
 };
-
+  
 export default Home;
