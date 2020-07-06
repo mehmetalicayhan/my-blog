@@ -6,14 +6,17 @@ import Post from "../components/Post";
 const Home = ({ posts }) => (
   <div className="container">
     <div className="row">
-      <div className="col-md-4">
+      <div className="col-md-12">
+        {
+          //col-md-4
+        }
         <Info />
       </div>
-      <div
-        className="d-sm-none d-md-block border-right p-0"
+      {/* <div
+        // className="d-sm-none d-md-block border-right p-0"
         style={{ maxWidth: "5.3333%" }}
-      ></div>
-      <div className="col ">
+      ></div> */}
+      <div className="col">
         {posts.map((post, i) => (
           <Post data={post} key={i} />
         ))}
@@ -34,5 +37,5 @@ Home.getInitialProps = async ({ req }) => {
   const json = await res.json();
   return { posts: json.posts };
 };
-  
+
 export default Home;

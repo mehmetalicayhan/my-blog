@@ -4,15 +4,12 @@ import { ResponsiveImg, SocialLink, Bio } from "./styledComponents/styles";
 const Info = () => {
   return (
     <div>
-      <ResponsiveImg src="profile.jpeg" />
+      {/* <ResponsiveImg src="profile.jpeg" /> */}
 
       <Bio>
-        <h4 className="text-center mt-4">Mehmet Ali Çayhan</h4>
-        <div className="mt-3">
-          Merhaba, Sakarya Üniversitesi Bilgisayar Mühendisliği 3.Sınıf
-          öğrencisiyim. Öğrenmek ve öğrendikçe paylaşmak için burada olacağım :
-          {")"}
-        </div>
+        <h4 className="text-center mt-1">Mehmet Ali Çayhan</h4>
+        {/* <div className="mt-3">
+        </div> */}
       </Bio>
 
       <div className="icons d-flex justify-content-center">
@@ -40,7 +37,7 @@ const Info = () => {
         </span>
       </div>
 
-      <h6 className="small text-center mt-5">
+      <h6 className="small text-center mt-4">
         <SocialLink href="https://github.com/mehmetalicayhan/my-blog">
           blog-github
         </SocialLink>{" "}
